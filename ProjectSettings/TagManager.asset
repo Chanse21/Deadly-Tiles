@@ -7,6 +7,7 @@ TagManager:
   - Board
   - DeathSpace
   - SafeSpace
+  - TileMap
   layers:
   - Default
   - TransparentFX
