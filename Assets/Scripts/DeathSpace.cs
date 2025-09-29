@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class DeathSpace : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class DeathSpace : MonoBehaviour
         if (collision.gameObject.CompareTag("DeathSpace")) // Replace "Hazard" with the tag of the collision object
         {
             Destroy(gameObject);
-            //SceneManager.LoadScene("Restart Scene");
+            SceneManager.LoadScene("Restart Scene");
         }
     }
 }
